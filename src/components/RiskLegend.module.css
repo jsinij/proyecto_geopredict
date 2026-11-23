@@ -1,0 +1,61 @@
+.leyenda {
+  padding: 1.4rem 1.25rem;
+  border-inline-start: 1px solid var(--line);
+  background: #fff;
+}
+
+.leyenda h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+.leyenda ul {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-block: 1px solid var(--line);
+  list-style: none;
+}
+
+.leyenda li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.simbolo {
+  display: grid;
+  place-items: center;
+  flex: 0 0 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.leyenda p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 52rem) {
+  .leyenda {
+    padding: 1rem;
+    border-inline-start: 0;
+    border-block-start: 1px solid var(--line);
+  }
+
+  .leyenda ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+    margin-block: 0.65rem;
+    padding-block: 0.65rem;
+  }
+}

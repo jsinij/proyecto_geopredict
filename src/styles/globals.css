@@ -1,0 +1,34 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  --ink: #17212b;
+  --dark: #17201e;
+  --muted: #4f5c58;
+  --surface: #f6f8f6;
+  --line: #dce2dd;
+  --brand-orange: #d97706;
+  --brand-yellow: #fbbf24;
+  --risk-low: #237a45;
+  --risk-danger: #a84600;
+  --risk-high: #b42318;
+  --page-width: min(94%, 96rem);
+  color: var(--ink);
+  background: var(--surface);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #174b90;
+  outline-offset: 2px;
+}
+
+.leaflet-container:focus-visible {
+  outline-offset: -4px;
+}

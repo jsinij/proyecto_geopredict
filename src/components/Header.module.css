@@ -1,0 +1,48 @@
+.barra {
+  background: var(--dark);
+  border-bottom: 3px solid var(--brand-yellow);
+  color: #fff;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: var(--page-width);
+  min-height: 4rem;
+  margin-inline: auto;
+}
+
+.marca {
+  display: grid;
+  place-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 0.6rem;
+  background: var(--brand-yellow);
+  color: var(--dark);
+}
+
+.marca span {
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 2px solid currentColor;
+  border-radius: 50% 50% 15% 50%;
+  rotate: 45deg;
+}
+
+.marca span::after {
+  display: block;
+  width: 0.24rem;
+  height: 0.24rem;
+  margin: 0.23rem auto;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
+
+.nombre {
+  font-size: 1.07rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}

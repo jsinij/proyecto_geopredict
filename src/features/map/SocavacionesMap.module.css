@@ -1,0 +1,111 @@
+.region {
+  position: relative;
+  min-width: 0;
+  isolation: isolate;
+}
+
+.mapa {
+  width: 100%;
+  height: clamp(32rem, 67dvh, 56rem);
+  background: #e6eae3;
+  font-family: inherit;
+}
+
+.region :global(.leaflet-control-zoom) {
+  margin: 1rem;
+  border: 1px solid #d5dbd6;
+  border-radius: 0.7rem;
+  box-shadow: 0 3px 10px #17201e20;
+}
+
+.region :global(.leaflet-control-zoom a) {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: inherit;
+}
+
+.region :global(.leaflet-control-attribution) {
+  padding: 2px 6px;
+  background: #fffc;
+}
+
+.region :global(.leaflet-control-attribution a) {
+  color: #214c64;
+}
+
+.marcador {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.marcador span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  box-shadow: 0 0 0 4px #fff6, 0 3px 8px #17201e68;
+}
+
+.marcador:hover span {
+  scale: 1.12;
+}
+
+.popup {
+  color: var(--ink);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.popup h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.popup p {
+  margin: 0.45rem 0 0;
+}
+
+.popup p span {
+  margin-right: 0.3rem;
+}
+
+.estado {
+  position: absolute;
+  z-index: 500;
+  top: 1rem;
+  right: 1rem;
+  left: 4.5rem;
+  display: grid;
+  justify-items: end;
+  gap: 0.4rem;
+  pointer-events: none;
+}
+
+.estado p {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ebd8ac;
+  border-radius: 0.5rem;
+  background: #fff8e6;
+  color: #56390f;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 52rem) {
+  .mapa {
+    height: clamp(28rem, 65dvh, 40rem);
+  }
+
+  .region :global(.leaflet-control-zoom) {
+    margin: 0.65rem;
+  }
+}
